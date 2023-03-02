@@ -1,10 +1,20 @@
 import java.util.Scanner;
 
-// Exercicio
+/**
+* @author ndias
+* @since 02/03/2023
+* @version 1.0
+*
+* <h2>Exércicio IV - Representar as equacões em java:</h2>
+* <p>1- (((∛a+3b/b+1)+b^5)/|b-a|) + (√(√a+1)/(b+3a+ba^5))-1 </p>
+* <p>2- (+ab^a+1) - (((a+3b)/(a+b-1))/|2b-a^3-1|)</p>
+*
+* */
 public class app {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
+
         System.out.println("Insira o valor para variável a:");
         double a = Double.parseDouble(input.next());
         System.out.println("Insira o valor para variável b:");
