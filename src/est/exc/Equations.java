@@ -1,3 +1,5 @@
+package est.exc;
+
 import java.util.Scanner;
 
 /**

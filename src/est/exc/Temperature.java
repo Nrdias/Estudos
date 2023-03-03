@@ -1,4 +1,4 @@
-
+package est.exc;
 
 /**
  * Crie um programa que receba a temperatura dos 6 primeiros meses do ano
