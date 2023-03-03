@@ -1,3 +1,5 @@
+package est.exc;
+
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
@@ -46,24 +48,15 @@ public class Questionary {
 
         for (String answer: answers
              ) {
-            if(answer == "Sim" || answer == "sim"){
+            if(Objects.equals(answer, "Sim") || Objects.equals(answer, "sim")){
                 suspicious++;
             }
         }
-        switch (suspicious){
-            case 0:
-            case 1:
-                System.out.println("Inocente");
-                break;
-            case 2:
-                System.out.println("Suspeito(a)");
-                break;
-            case 3:
-            case 4:
-                System.out.println("Cúmplice");
-                break;
-            case 5:
-                System.out.println("Assassino(a)");
+        switch (suspicious) {
+            case 0, 1 -> System.out.println("Inocente");
+            case 2 -> System.out.println("Suspeito(a)");
+            case 3, 4 -> System.out.println("Cúmplice");
+            case 5 -> System.out.println("Assassino(a)");
         }
         System.out.println("Fim do programa!");
     }
