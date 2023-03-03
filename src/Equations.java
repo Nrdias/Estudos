@@ -10,7 +10,7 @@ import java.util.Scanner;
 * <p>2- (+ab^a+1) - (((a+3b)/(a+b-1))/|2b-a^3-1|)</p>
 *
 * */
-public class app {
+public class Equations {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
