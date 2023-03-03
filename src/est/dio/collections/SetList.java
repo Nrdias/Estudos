@@ -1,6 +1,10 @@
 package est.dio.collections;
 
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
+
 
 /*
 * Interface Set:
@@ -26,4 +30,26 @@ import java.util.Set;
 * 3.4 não permite elemento null
 * */
 public class SetList {
+    public static void main(String[] args) {
+        Set<Double> notas = new HashSet<>();
+        notas.add(7d);
+        notas.add(8.5);
+        notas.add(3.6);
+
+        boolean existe = notas.contains(7d);
+        Iterator<Double> iterator = notas.iterator();
+        Double soma = 0.0;
+
+        for (Double item: notas) {
+            soma += iterator.next();
+        }
+
+        System.out.println(notas);
+        System.out.println(existe);
+        System.out.println(soma);
+
+        notas.remove(7d);
+
+    }
+
 }
