@@ -1,15 +1,13 @@
 package est.dio.collections;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 
 /*
 * Interface Set:
 * Não permite elementos duplicados
 * Não possui Indice
+*
 *
 * 1 HashSet: ->
 * 1.1 usa hashmap para guardar elementos
@@ -50,6 +48,84 @@ public class SetList {
 
         notas.remove(7d);
 
+
+        class Cats implements Comparable<Cats>{
+            private String name;
+            private String color;
+            private Integer idade;
+
+            public Cats(String name, String color, Integer idade){
+                this.name = name;
+                this.color = color;
+                this.idade = idade;
+            }
+
+            public String getName(){
+                return name;
+            }
+            public String getColor(){
+                return color;
+            }
+            public Integer getIdade(){
+                return idade;
+            }
+
+            @Override
+            public String toString() {
+                return "Cats{" +
+                        "name='" + name + '\'' +
+                        ", color='" + color + '\'' +
+                        ", idade=" + idade +
+                        '}';
+            }
+
+            @Override
+            public boolean equals(Object o) {
+                if (this == o) return true;
+                if (o == null || getClass() != o.getClass()) return false;
+                Cats cats = (Cats) o;
+                return Objects.equals(name, cats.name) && Objects.equals(color, cats.color) && Objects.equals(idade, cats.idade);
+            }
+
+            @Override
+            public int hashCode() {
+                return Objects.hash(name, color, idade);
+            }
+
+            @Override
+            public int compareTo(Cats idade) {
+                return Integer.compare(this.getIdade(), idade.getIdade());
+
+            }
+        }
+
+        Set<Cats> myCats = new HashSet<>();
+
+        // Lista sem ordem
+
+        myCats.add(new Cats("Castiel","White", 1));
+        myCats.add(new Cats("Frajola","Black", 1));
+        myCats.add(new Cats("Faísca","Black", 3));
+
+        for (Cats cat: myCats) {
+            System.out.println(cat.getName() + " - " +  cat.getColor() + " - " + cat.getIdade() );
+        }
+
+        Set<Cats> myCats1 = new LinkedHashSet<>();
+
+        // Lista ordenada por inserção
+
+        myCats1.add(new Cats("Castiel","White", 1));
+        myCats1.add(new Cats("Frajola","Black", 2));
+        myCats1.add(new Cats("Faísca","Black", 3));
+
+        for (Cats cat: myCats1) {
+            System.out.println(cat.getName() + " - " +  cat.getColor() + " - " + cat.getIdade() );
+        }
+        // Lista ordenada naturalmente
+
+        Set<Cats> myCats2 = new TreeSet<>(myCats1);
+        System.out.println(myCats2);
     }
 
 }
