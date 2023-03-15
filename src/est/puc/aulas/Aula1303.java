@@ -54,7 +54,54 @@ public class Aula1303 {
         System.out.println("Valor do maior: " + maior);
         System.out.println("Valor do menor: " + menor);
 
-        System.out.println("8 - ");
+        System.out.println("8 - Faça um programa que leia as dimensões de um terreno e de uma casa, e retornar o valor livre do terreno ");
+        System.out.print("Informe o comprimento da casa: ");
+        double compCasa = in.nextDouble();
+        System.out.print("Informe a lagura da casa: ");
+        double largCasa = in.nextDouble();
+        System.out.print("Informe o comprimento do terreno: ");
+        double compTerr = in.nextDouble();
+        System.out.print("Informe a largura da terreno: ");
+        double largTerr = in.nextDouble();
 
+        double areaCasa = compCasa * largCasa;
+        double areaTerreno = compTerr * largTerr;
+        double areaLivre = areaTerreno - areaCasa;
+
+        System.out.println("A casa possuí " + areaCasa + " de área e terreno " + areaTerreno );
+        System.out.println("A área livre é: " + areaLivre);
+
+        System.out.println("9 - Faça um programa que leia a altura da pessoa em metros e mostre a altura em centímetros");
+        System.out.print("Informe a altura em metros: ");
+        double metros = in.nextDouble();
+        double centimetros = metros * 100;
+
+        System.out.println("A altura em centímetros é: " + centimetros + "cm");
+
+        System.out.println("10 - Transforme um tempo em segundos em horas, minutos e segundos");
+
+        int segundos = in.nextInt();
+        int minutos = segundos / 60;
+        int horas = minutos / 60;
+        segundos = segundos % 60;
+        minutos = minutos % 60;
+
+        System.out.println("O valor decomposto é: " + horas + " horas, " + minutos + " minutos e " + segundos + " segundos.");
+        
+        System.out.println("11 - implemente um programa que leia um número inteiro e o retorne invertido. 1234 -> 4321");
+        int valor = in.nextInt();
+        //String numeros = String.valueOf(valor);
+        //String[] array;
+        //array = numeros.split("");
+        //numeros = array[3]+array[2]+array[1]+array[0];
+        //valor = Integer.parseInt(numeros);
+        int primeiro = (valor/ 1000)%10;
+        int segundo = (valor / 100)%10;
+        int terceiro = (valor / 10)%10; 
+        int quarto = valor%10;
+        
+        int valor2 = ((quarto * 1000) + (terceiro * 100) + (segundo * 10) + primeiro);
+
+            System.out.println("O valor invertido é: " + valor2);
     }
 }
