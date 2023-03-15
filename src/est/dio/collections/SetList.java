@@ -34,7 +34,7 @@ public class SetList {
         notas.add(8.5);
         notas.add(3.6);
 
-        boolean existe = notas.contains(7d);
+        boolean exist = notas.contains(7d);
         Iterator<Double> iterator = notas.iterator();
         Double soma = 0.0;
 
@@ -43,7 +43,7 @@ public class SetList {
         }
 
         System.out.println(notas);
-        System.out.println(existe);
+        System.out.println(exist);
         System.out.println(soma);
 
         notas.remove(7d);

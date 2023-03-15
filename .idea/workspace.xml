@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86959ec2-8fd5-4e6e-bffb-fadf4af168fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/est/dio/streamAPI/ExerciceArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/est/dio/streamAPI/ExerciceMapList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/est/dio/streamAPI/ExerciceSetList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/est/puc/aulas/Aula1303.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/est/stream/StreamAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/est/dio/collections/SetList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/est/dio/collections/SetList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/est/dio/streamAPI/ExerciceArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/est/dio/streamAPI/ExerciceArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/est/exc/Temperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/est/exc/Temperature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/est/stream/AnonymousClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/est/stream/AnonymousClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/est/stream/Lambda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/est/stream/Lambda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +49,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ndias/workspaces/Estudos&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -55,17 +58,17 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ExerciceArrayList">
-    <configuration name="ExemploList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="col.edu.array.ExemploList" />
+  <component name="RunManager" selected="Application.Aula1303">
+    <configuration name="Aula1303" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="est.puc.aulas.Aula1303" />
       <module name="Estudos" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="col.edu.array.*" />
+          <option name="PATTERN" value="est.puc.aulas.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,13 +102,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Questionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="est.exc.Questionary" />
-      <module name="Estudos" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SetList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="est.dio.collections.SetList" />
       <module name="Estudos" />
@@ -119,13 +115,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Temperature" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="est.exc.Temperature" />
+      <module name="Estudos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="est.exc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Aula1303" />
         <item itemvalue="Application.ExerciceArrayList" />
+        <item itemvalue="Application.Temperature" />
         <item itemvalue="Application.MapList" />
         <item itemvalue="Application.SetList" />
-        <item itemvalue="Application.Questionary" />
-        <item itemvalue="Application.ExemploList" />
       </list>
     </recent_temporary>
   </component>
@@ -146,6 +155,13 @@
       <workItem from="1677863741705" duration="1836000" />
       <workItem from="1677871665439" duration="1958000" />
       <workItem from="1678104666236" duration="13257000" />
+      <workItem from="1678387316598" duration="1997000" />
+      <workItem from="1678463498070" duration="53000" />
+      <workItem from="1678485324050" duration="713000" />
+      <workItem from="1678486904646" duration="307000" />
+      <workItem from="1678490906749" duration="530000" />
+      <workItem from="1678739240431" duration="20000" />
+      <workItem from="1678795002895" duration="3052000" />
     </task>
     <servers />
   </component>

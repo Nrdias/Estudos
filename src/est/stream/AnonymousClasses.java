@@ -58,10 +58,10 @@ public class AnonymousClasses {
             }
         });
 
-        /**
-        * Como seria normalmente feito:
-        *
-        * @class CompararGatos implements Comparator<Cats>{
+        /*
+         Como seria normalmente feito:
+
+         @class CompararGatos implements Comparator<Cats>{
         *   public int compare(Cats o1, Cats o2) {
         *       return Integer.compare(o1.getIdade(), o2.getIdade());
         *   }

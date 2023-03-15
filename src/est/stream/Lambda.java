@@ -39,7 +39,6 @@ public class Lambda {
                 Cats cats = (Cats) o;
                 return name.equals(cats.name) && color.equals(cats.color) && idade.equals(cats.idade);
             }
-
             @Override
             public int hashCode() {
                 return Objects.hash(name, color, idade);
