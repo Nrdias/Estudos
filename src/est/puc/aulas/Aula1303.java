@@ -90,11 +90,13 @@ public class Aula1303 {
         
         System.out.println("11 - implemente um programa que leia um número inteiro e o retorne invertido. 1234 -> 4321");
         int valor = in.nextInt();
-        //String numeros = String.valueOf(valor);
-        //String[] array;
-        //array = numeros.split("");
-        //numeros = array[3]+array[2]+array[1]+array[0];
-        //valor = Integer.parseInt(numeros);
+        /*
+        String numeros = String.valueOf(valor);
+        String[] array;
+        array = numeros.split("");
+        numeros = array[3]+array[2]+array[1]+array[0];
+        valor = Integer.parseInt(numeros);
+        */
         int primeiro = (valor/ 1000)%10;
         int segundo = (valor / 100)%10;
         int terceiro = (valor / 10)%10; 
